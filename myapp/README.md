@@ -19,7 +19,6 @@
 
 
 
-
 # Creating a React App
     (old)
     > npx create-react-app <app-name>
@@ -48,7 +47,7 @@
     Render this in src/App.js
 
 
-# Installing tailwind@4 in react 
+# Installing tailwindcss-v4 in react 
 
     > npm install tailwindcss @tailwindcss/vite
 
