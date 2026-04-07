@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function Home() {
+export default function Hooks1() {
     const [count, setCount] = useState(0)
     const [isShow, setIsShow] = useState(true)
     const [content, setContent] = useState("text will display here")
@@ -12,10 +12,9 @@ export default function Home() {
     }
     return (
         <>
-            <h1>Home Page</h1>
             <div className="border-2 p-4 m-4 grid gap-4">
                 <header className="text-blue-600">useState</header>
-                
+
                 <div className="border p-2">
                     <h4>Counter</h4>
                     <button onClick={decCount} className="border px-2 py-1">-</button>
@@ -25,7 +24,7 @@ export default function Home() {
 
                 <div className="border p-2 flex">
                     <button onClick={() => setIsShow(!isShow)} className="border px-4 cursor-pointer">{isShow ? "Hide" : "Show"}</button>
-                    { isShow && <h4 className="px-4">Toggle button</h4>}
+                    {isShow && <h4 className="px-4">Toggle button</h4>}
                 </div>
 
                 <div className="border p-2">

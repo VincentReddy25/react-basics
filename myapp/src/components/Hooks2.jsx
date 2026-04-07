@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-export default function About() {
+export default function Hooks2() {
 
     const [data, setData] = useState([])
 
@@ -20,15 +20,15 @@ export default function About() {
 
     return (
         <>
-            <h1>About Page</h1>
+            <h1>useEffect</h1>
 
             <div className="m-4 grid gap-4">
                 <ul>
-                    { data.map((pokemon) => (
+                    {data.map((pokemon) => (
                         <li key={pokemon.name}>
                             <a target="_blank" rel="noopener noreferrer" href={pokemon.url}>open url of {pokemon.name}</a>
                         </li>
-                    )) }
+                    ))}
                 </ul>
             </div>
         </>
