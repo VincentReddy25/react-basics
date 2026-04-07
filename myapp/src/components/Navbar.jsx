@@ -10,8 +10,8 @@ export default function Navbar() {
         <>
             <Link to="/home">Home</Link>
             <Link to="/about">About</Link>
-            <Link to="/contact">About</Link>
-            <Link to="/login">About</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/login">Login</Link>
 
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -23,3 +23,4 @@ export default function Navbar() {
         </>
     )
 }
+
